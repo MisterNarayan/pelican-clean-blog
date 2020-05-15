@@ -14,8 +14,10 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
-                        <h1>A Pelican Blog</h1>
-                        <span class="subtitle">- by <a href="https://misternarayan.github.io" style="color: white" target="_self">Shiva Saxena</a></span>
+                        <h1>{{ HEADER_PAGE_TITLE }}</h1>
+                        {% if SHOW_CREDIT_BY_AUTHOR %}
+                            <span class="subtitle">- by <a href="https://misternarayan.github.io" style="color: white" target="_self">{{ AUTHOR }}</a></span>
+                        {% endif %}
 
                         <!-- <h1>{{ AUTHOR }}</h1> -->
                         <!-- {% if SITESUBTITLE %} -->
