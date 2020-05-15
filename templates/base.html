@@ -120,15 +120,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ SITEURL }}/">{{ SITENAME }}</a>
+                <a class="navbar-brand" href="https://misternarayan.github.io" target="_self">{{ SITENAME }}</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    {% for title, link in MENUITEMS %}
-                        <li><a href="{{ link }}">{{ title }}</a></li>
-                    {% endfor %}
+                    <li><a href="https://misternarayan.github.io" target="_self">Home</a></li>
+                    <li><a href="https://misternarayan.github.io/about.html" target="_self">About</a></li>
+                    <li><a href="https://misternarayan.github.io/contact.html" target="_self">Contact</a></li>
+                    <li><a href="https://misternarayan.github.io/projects.html" target="_self">Projects</a></li>
+                    <li class="active"><a href="https://misternarayan.github.io/blog/" target="_self">Blog</a></li>
+                    <li><a href="https://misternarayan.wordpress.com/" target="_blank">Wordpress</a></li>
+
+
+                    <!-- {% for title, link in MENUITEMS %} -->
+                    <!--     <li><a href="{{ link }}">{{ title }}</a></li> -->
+                    <!-- {% endfor %} -->
 
                     {% if DISPLAY_PAGES_ON_MENU %}
                         {# FIXME: Simplify to 'for p in pages' when we are ready to drop support for Pelican < 3.7 #}

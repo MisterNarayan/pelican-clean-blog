@@ -13,12 +13,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="page-heading">
-                        <h1>{{ AUTHOR }}</h1>
-                        {% if SITESUBTITLE %}
-                            <hr class="small">
-                            <span class="subheading">{{ SITESUBTITLE }}</span>
-                        {% endif %}
+                    <div class="post-heading">
+                        <h1>A Pelican Blog</h1>
+                        <span class="subtitle">- by <a href="https://misternarayan.github.io" style="color: white" target="_self">Shiva Saxena</a></span>
+
+                        <!-- <h1>{{ AUTHOR }}</h1> -->
+                        <!-- {% if SITESUBTITLE %} -->
+                        <!--     <hr class="small"> -->
+                        <!--     <span class="subheading">{{ SITESUBTITLE }}</span> -->
+                        <!-- {% endif %} -->
+
                         {% if SOCIAL and SHOW_SOCIAL_ON_INDEX_PAGE_HEADER %}
                             <ul class="list-inline text-center">
                             {% for name,link in SOCIAL %}
